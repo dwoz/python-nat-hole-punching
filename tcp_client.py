@@ -91,6 +91,6 @@ def main(host='54.187.46.146', port=5005):
                 threads.pop(name)
 
 
-if __name__ == '__name__':
+if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, message='%(asctime)s %(message)s')
     main(*addr_from_args(sys.argv))
