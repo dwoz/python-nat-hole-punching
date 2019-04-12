@@ -18,7 +18,7 @@ def main(host='0.0.0.0', port=9999):
         if len(addresses) >= 2:
             logger.info("server - send client info to: %s", addresses[0])
             sock.sendto(addr_to_msg(addresses[1]), addresses[0])
-            logger.info("server - send client info to: %s", addresses[0])
+            logger.info("server - send client info to: %s", addresses[1])
             sock.sendto(addr_to_msg(addresses[0]), addresses[1])
             addresses.pop(1)
             addresses.pop(0)
